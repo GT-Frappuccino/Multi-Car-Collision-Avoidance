@@ -28,6 +28,8 @@
   2. short delay -> measure distance code
        long delay -> 카메라 2대 동시 사용 방법 찾기
        
+       webcam + raspicam 2대 사용하기
+       
 3. Measure Distance Code
   //11.18(월) 
 

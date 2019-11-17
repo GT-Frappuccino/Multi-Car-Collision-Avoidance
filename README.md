@@ -4,9 +4,17 @@
 ## To do
 
 1. 카메라 1개로 각도 측정 // 일단은 가로만
-  1. 카메라 광각(?=theta)(가로, 세로) 측정
+  1. 카메라 광각(?=theta)(가로, 세로)/2 측정
+  theta_raspicam = 64.6'
+  theta_raspicam/2 = 32.3'
+  
   2. img frame pixel(가로, 세로)/2 
+  raspicam_pixel = (640,480)
+  
+  raspicam_pixel_width/2 = 640/2 = 320 px
+  
   3. focus to img frame distance = (img frame pixel/2)/tan(theta/2) 계산
+  focus to img frame distance = 320/tan(32.3') = 506.7
 
 2. Multi-Cam Board Test
 

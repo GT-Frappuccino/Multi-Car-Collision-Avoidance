@@ -14,7 +14,7 @@
   >raspicam_pixel_width/2 = 640/2 = 320 px
   
   3. focus to img frame distance = (img frame pixel/2)/tan(theta/2) 계산
-  >focus to img frame distance = 320/tan(32.3') = 506.7
+  >focus to img frame distance_raspicam = 320/tan(32.3') = 506.7
 
 2. Multi-Cam Board Test
 

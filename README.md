@@ -8,9 +8,21 @@
   3. focus to img frame distance = (img frame pixel/2)/tan(theta/2) 계산
 
 2. Multi-Cam Board Test
+
   1. 카메라 2대 연속촬영 delay test
   2. short delay -> measure distance code
        long delay -> 카메라 2대 동시 사용 방법 찾기
        
 3. Measure Distance Code
   //11.18(월) 
+
+
+     
+1. 아키텍쳐
+  1. MSA
+  2. SOA
+2. Java
+  1. Java 8
+    * 스트림
+    * 람다
+  2. 자바 성능

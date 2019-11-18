@@ -28,14 +28,11 @@
   >focus to img frame distance_webcam = 160/tan(26.6') = 320 (width)  
   >focus to img frame distance_webcam = 120/tan(19.0') = 349 (height)  
 
-2. Multi-Cam Board Test  
-
-  1. 카메라 2대 연속촬영 delay test  
-  2. short delay -> measure distance code  
-       long delay -> 카메라 2대 동시 사용 방법 찾기
-       
-       webcam + raspicam 2대 사용하기
-       
+2. Camera angel Measure   
+  1. opencv object detection  
+  2. opencv contour && find mass center  
+  3. calculate angel  
+  
 3. Measure Distance Code  
   //11.18(월) 
 

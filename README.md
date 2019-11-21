@@ -43,6 +43,8 @@
   
 2. Simulation  
   - 목적지 가는 알고리즘 짜고 simulation 할 방법 찾기  
+  - robot은 목적지, 출발지, 전체 맵 크기, Potential 분포만 아는 상태  
+  - 목적지로 가는 도중 obstacle/other robots detect하게 됨  
   - Mobile Robotics Simulation Toolbox (11.22(금) - 11.23(토))  
   - https://kr.mathworks.com/matlabcentral/fileexchange/66586-mobile-robotics-simulation-toolbox
 

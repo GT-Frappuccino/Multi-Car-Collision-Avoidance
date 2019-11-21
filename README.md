@@ -36,3 +36,13 @@
 3. Measure Distance Code  
   //11.18(월) 
 
+//11.21(목)  
+1. 자동차  
+  - jetbot detect하는 model 찾기  
+  - 주행 오차 보정 방법 찾기  
+  
+2. Simulation  
+  - 목적지 가는 알고리즘 짜고 simulation 할 방법 찾기  
+  - Mobile Robotics Simulation Toolbox (11.22(금) - 11.23(토))  
+  - https://kr.mathworks.com/matlabcentral/fileexchange/66586-mobile-robotics-simulation-toolbox
+

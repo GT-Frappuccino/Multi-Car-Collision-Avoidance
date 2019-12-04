@@ -48,3 +48,19 @@
   - Mobile Robotics Simulation Toolbox (11.22(금) - 11.23(토))  
   - https://kr.mathworks.com/matlabcentral/fileexchange/66586-mobile-robotics-simulation-toolbox
 
+//12.4(수)   
+1. 코드  
+  >fun_dir = @(x) K_dir* sum((nanAngle1-atan((x(2)-pose1(2,1))/(x(1)-pose1(1,1)))).^2))   
+  - nanAngle1에서 x와 맞지 않는 값이 항상 존재 -> 무엇을 고르든 fun_dir은 거의 변하지 않을것임  
+   ->nanAngle1에서 하나를 고르거나 가까이 있는 angle값을 높이기 (알아서 NaN인 각도를 고를 것임)   
+  >fun_obs = @(x) K_obs*sum(1-cdf(gm, ((x(1)-obstacle(:,1)).^2 + (x(2)-obstacle(:,2)).^2).^(1/2)))  
+  - 가우시안 연산량이 많음   
+  -> Bound function이나 발산하지 않는 분수 함수로 대체할 것  
+  - 과도한 tool 사용 -> 부품 연동 불가
+    
+2.  알고리즘  
+  - 로봇이 자신, 목적지의 절대 위치를 모르는 형태로 짜야함.  
+    Potential function x / 목적지를 찾기 위해 obstacle이 없는 방향으로 조금씩 움직이고 sensor detection 할 것  
+  - 카메라 보정  
+    일정 거리만큼 움직인 후 lidar(camera)로 측정한 거리로 삼각형 그려서 각도 보정
+    

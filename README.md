@@ -48,7 +48,8 @@
   - Mobile Robotics Simulation Toolbox (11.22(금) - 11.23(토))  
   - https://kr.mathworks.com/matlabcentral/fileexchange/66586-mobile-robotics-simulation-toolbox
 
-//12.4(수)   
+## 12.4(수) 면담 요약  
+  
 1. 코드  
   >fun_dir = @(x) K_dir* sum((nanAngle1-atan((x(2)-pose1(2,1))/(x(1)-pose1(1,1)))).^2))   
   - nanAngle1에서 x와 맞지 않는 값이 항상 존재 -> 무엇을 고르든 fun_dir은 거의 변하지 않을것임  
